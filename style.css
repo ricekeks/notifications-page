@@ -1,0 +1,160 @@
+@font-face{
+	font-family: 'KumbhSans';
+	src: url('./misc/KumbhSans-VariableFont_wght') format('truetype');
+}
+
+html{
+	font-family: KumbhSans;
+	font-size: 0.75rem;
+	text-align: center;
+	color: hsl(238, 29%, 16%);
+
+	background: hsl(273, 75%, 66%);
+	background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 1280px) {
+
+	main{
+		width: 80%;
+	}
+
+	content{
+		display: flex!important;
+		justify-content: flex-start!important;
+		padding: 1em 0 1em 0!important;
+	}
+
+	header{
+		background: url('./images/bg-pattern-desktop.svg') no-repeat;
+		background-position-y: bottom;
+		background-size: contain;
+		
+		height: auto!important;
+		position: inherit!important;
+		width: 50%!important;
+		height: 100%!important;
+	}
+
+	header img.img1{
+		position: inherit!important;
+		top: 100%!important;
+		left: 0!important;
+		transform: none!important;
+		width: 100%!important;
+	}
+
+	header img.img2{
+		display:none!important;
+	}
+
+	#faq{
+		padding-left: 1em;
+	}
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 2rem;
+	min-width: 26rem;
+	min-height: 100vh;
+}
+
+content{
+	display: block;
+
+	background: #fff;
+	border-radius: 24px;
+	padding: 0 1em 2em 1em;
+}
+
+header{
+	height: 13vh;
+	position: relative;
+}
+
+.img1{
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: auto;
+}
+
+.img2{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 80%;
+	height: auto;
+}
+
+h1{
+	color: hsl(238, 29%, 16%);
+	font-weight: 700;
+	font-size: 3em;
+}
+
+#faq{
+	text-align: left;
+}
+
+article{
+	border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+button.accordion{
+	padding: 1em;
+	width: 100%;
+
+	cursor: pointer;
+	background: none;
+	text-align: left;
+
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+.accordion.active, .accordion.hover{
+	color: hsl(238, 29%, 16%);
+	font-weight: 700;
+}
+
+.accordion:after {
+	content: '+'; /* Unicode character for "plus" sign (+) */
+	color: hsl(14, 88%, 65%)!important;
+	float: right;
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+.active:after {
+	color: hsl(14, 88%, 65%)!important;
+	content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+	padding: 0 1em;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.1s ease-out;
+}
+
+footer{
+	padding: 2em 0 0 0;
+
+	font-size: 0.6875em;
+	text-align: center;
+}
+
+footer a {
+	color: hsl(228, 45%, 44%);
+}
