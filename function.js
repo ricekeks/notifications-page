@@ -1,0 +1,1 @@
+document.getElementById("MyElement").classList.remove('MyClass');

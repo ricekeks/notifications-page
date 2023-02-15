@@ -6,72 +6,108 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./style.css">
-  
-  <script src="https://kit.fontawesome.com/ff1eba063c.js" crossorigin="anonymous"></script>
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <title>Frontend Mentor | Notifications page</title>
 </head>
 <body>
   <main>
 
-    <content>
+    <section class="notifications">
       <header>
-        <img class="img1" src="./images/illustration-woman-online-mobile.svg" alt="" no-repeat>
-        <img class="img2" src="./images/bg-pattern-mobile.svg" alt="" no-repeat>
+        <h1 class="events unread">Notifications</h1>
+        <p class="mark">
+          <a href="#" title="Mark all unread messages as read" id="MarkAllRead">Mark all as read</a>
+        </p>
       </header>
-
-      <div>
-        <h1>FAQ</h1>
-
-        <div id="faq">
-          <article>
-            <button class="accordion">How many team members can I invite?</button>
-            <div class="panel">
-              <p>
-                You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-              </p>
-            </div>
-          </article>
-          <article>
-            <button class="accordion active">What is the maximum file upload size?</button>
-            <div class="panel">
-              <p>
-                No more than 2GB. All files in your account must fit your allotted storage space.
-              </p>
-            </div>
-          </article>
-          <article>
-            <button class="accordion">How do I reset my password?</button>
-            <div class="panel">
-              <p>
-                Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
-              </p>
-            </div>
-          </article>
-          <article>
-            <button class="accordion">Can I cancel my subscription?</button>
-            <div class="panel">
-              <p>
-                Yes! Send us a message and we’ll process your request no questions asked.
-              </p>
-            </div>
-          </article>
-          <article>
-            <button class="accordion">Do you provide additional support?</button>
-            <div class="panel">
-              <p>
-                Chat and email support is available 24/7. Phone lines are open during normal business hours.
-              </p>
-            </div>
-          </article>
+      <article class="unread">
+        <img class="avatar" src="./images/avatar-mark-webber.webp" alt="">
+        <div>
+        <p class="action unread">
+          <a href="#" class="user">Mark Webber</a> reacted to your recent post <a href="#" class="context">My first tournament today!</a>
+        </p>
+        <p class="time">
+          1m ago
+        </p>
         </div>
-        <footer>
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://www.frontendmentor.io/profile/ricekeks">ricekeks</a>.
-        </footer>
+      </article>
+      <article class="unread">
+        <img class="avatar" src="./images/avatar-angela-gray.webp" alt="">
+        <div>
+        <p class="action unread">
+          <a href="#" class="user">Angela Gray</a> followed you
+        </p>
+        <p class="time">
+          5m ago
+        </p>
       </div>
-    </content>
-    <script src="./js/accordion.js"></script>
+      </article>
+      <article class="unread">
+        <img class="avatar" src="./images/avatar-jacob-thompson.webp" alt="">
+        <div>
+          <p class="action unread">
+          <a href="#" class="user">Jacob Thompson</a> has joined your group <a href="#" class="group">Chess Club</a>
+          </p>
+          <p class="time">
+            1 day ago
+          </p>
+        </div>
+      </article>
+      <article>
+        <img class="avatar" src="./images/avatar-rizky-hasanuddin.webp" alt="">
+        <div>
+          <p class="action">
+            <a href="#" class="user">Rizky Hasanuddin</a> sent you a private message
+          </p>
+          <p class="time">
+            5 days ago
+          </p>
+          <p class="mssgbox">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </article>
+      <article>
+        <img class="avatar" src="./images/avatar-kimberly-smith.webp" alt="">
+        <div class="picture">
+          <p class="action">
+            <a href="#" class="user">Kimberly Smith</a> commented on your picture
+          </p>
+          <p class="time">
+            1 day ago
+          </p>
+        </div>
+        <a href="#" title="View picture" class="picture"><img src="./images/image-chess.webp" alt="Chess player" class="picture"></a>
+      </article>
+      <article>
+        <img class="avatar" src="./images/avatar-nathan-peterson.webp" alt="">
+        <div>
+          <p class="action">
+          <a href="#" class="user">Nathan Peterson</a> reacted to your recent post <a href="#" class="context">5 end-game strategies to increase your win rate</a>
+          </p>
+          <p class="time">
+            2 weeks ago
+          </p>
+        </div>
+      </article>
+      <article>
+        <img class="avatar" src="./images/avatar-anna-kim.webp" alt="">
+        <div>
+          <p class="action">
+          <a href="#" class="user">Anna Kim</a> left the group <a href="#" class="group">Chess Club</a>
+          </p>
+          <p class="time">
+            2 weeks ago
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/ricekeks">ricekeks</a>.
+    </footer>
   </main>
+
+  <script src="./js/function.js"></script>
 </body>
 </html>
